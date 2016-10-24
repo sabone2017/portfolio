@@ -1,0 +1,90 @@
+html , body{
+	margin:0;
+	padding:0;
+}
+.wrapper{
+	padding: 0;
+	margin: 0;
+}
+#intro{
+	height: 100vh;
+	background-image: url(../assets/images/fullBG.png);
+	background-size: cover;
+	color: white;
+	font-weight: bold;
+	font-size: 26px;
+	font-family: Arial, Gadget, sans-serif;
+}
+.headBorder{
+	display:none;
+	background-color: #B2AFAF;
+	opacity: .4;
+}
+#logo{
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	margin-right:118px;
+	top: 220px;
+	width: auto;
+}
+#centerStuff{
+	position: relative;
+	top: 0px;
+	width: 500px;
+	margin:0 auto;
+	text-align: center;
+}
+#midBox{
+	display: none;
+	height: 1000px;
+	width: 1700px;
+	margin: 100px auto;
+	background-color: #FFF8D9;
+}
+#description{
+	position:relative;
+	width: 403px;
+	top: 250px;
+	margin: 0 auto;
+}
+#enter{
+	position: relative;
+	top: 300px;
+	color: white;
+	font-weight: bold;
+	font-size: 25px;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	border: solid white 4px;
+}
+
+.headNav{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #FFF;
+}
+
+li{
+	float:left;
+}
+
+li a{
+	display: block;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	color: #000;
+}
+
+li a:hover{
+	height: auto;
+	background-color: #111;
+	color: #FFF8D9;
+}
+
+li.active{
+	border-bottom: red solid 5px;
+}
