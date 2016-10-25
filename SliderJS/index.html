@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+  <meta name="author" content="Sean A Bone">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+
+  <style>
+    .row-content{
+      padding: 25px 25px 25px 25px;
+      min-height: 500px;
+    }
+    .slideBody{
+      background-color: #5fd5d5;
+    }
+
+    .sidebar{
+      min-height: 400px;
+      background-color: #FFF;
+    }
+
+    .slideContainer{
+      padding: 0;
+      overflow: hidden;
+      height: 400px;
+      background-color: #000;
+    }
+
+    .slide{
+      display: none;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="row row-content slideBody">
+      <div class="col-sm-4 sidebar">
+        <p>This is going to be the location for the image previews. They will be block styled and show a rectangular preview</p>
+        <p> Will use a fixed height that will be styled in the side bar.</p>
+        <p>Maybe us a ul as a way to make the previews</p>
+        <p>Final background color will also be transparent and allow the li elements in the ul to have image backgrounds based off preset image previews.</p>
+      </div>
+      <div class="col-sm-7 col-sm-offset-1 slideContainer">
+        <img src="images/bgmaybe.png" class="slide">
+        <img src="images/DSq3U.jpg" class="slide" style="display:block;">
+        <img src="images/lookbookdrkrgt.png" class="slide">
+        <img src="images/Obito.jpg" class="slide">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
