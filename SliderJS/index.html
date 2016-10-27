@@ -19,7 +19,7 @@
 
     .sidebar{
       min-height: 400px;
-      background-color: #FFF;
+      <--background-color: #FFF;-->
     }
 
     .slideContainer{
@@ -32,6 +32,7 @@
     .slide{
       display: none;
       max-height: 400px;
+      min-width: 747px;
     }
 
     .prev , .next{
@@ -48,6 +49,11 @@
       right: 0;
       border-radius: 5px 0 0 5px;
     }
+    .preview{
+      height: 75px;
+      background-color: blue;
+      right: 0;
+    }
   </style>
 
 </head>
@@ -56,12 +62,15 @@
   <div class="container">
     <div class="row row-content slideBody">
       <div class="col-sm-4 sidebar">
-        <p>This is going to be the location for the image previews. They will be block styled and show a rectangular preview</p>
+        <div class="preview">
+
+        </div>
+        <!--<p>This is going to be the location for the image previews. They will be block styled and show a rectangular preview</p>
         <p> Will use a fixed height that will be styled in the side bar.</p>
         <p>Maybe us a ul as a way to make the previews</p>
-        <p>Final background color will also be transparent and allow the li elements in the ul to have image backgrounds based off preset image previews.</p>
+        <p>Final background color will also be transparent and allow the li elements in the ul to have image backgrounds based off preset image previews.</p>-->
       </div>
-      <div class="col-sm-7 col-sm-offset-1 slideContainer">
+      <div class="col-sm-8 slideContainer">
         <img src="images/bgmaybe.png" class="slide">
         <img src="images/DSq3U.jpg" class="slide">
         <img src="images/lookbookdrkrgt.png" class="slide">
