@@ -31,6 +31,22 @@
 
     .slide{
       display: none;
+      max-height: 400px;
+    }
+
+    .prev , .next{
+      position: absolute;
+      background-color: #000;
+      font-size: 25px;
+      color: white;
+      font-weight: bold;
+      top: 50%;
+      width: auto;
+      border-radius: 0 5px 5px 0;
+    }
+    .next{
+      right: 0;
+      border-radius: 5px 0 0 5px;
     }
   </style>
 
@@ -47,11 +63,14 @@
       </div>
       <div class="col-sm-7 col-sm-offset-1 slideContainer">
         <img src="images/bgmaybe.png" class="slide">
-        <img src="images/DSq3U.jpg" class="slide" style="display:block;">
+        <img src="images/DSq3U.jpg" class="slide">
         <img src="images/lookbookdrkrgt.png" class="slide">
         <img src="images/Obito.jpg" class="slide">
+        <button class="prev" onclick="incSlide(-1)"><</button>
+        <button class="next" onclick="incSlide(1)">></button>
       </div>
     </div>
   </div>
+<script src="js/slideScript.js">//script for the slides to work</script>
 </body>
 </html>
