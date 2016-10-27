@@ -1,4 +1,4 @@
-var slideIndex = 0;
+var slideIndex = 1;
 showSlide(slideIndex);
 
 function incSlide(n){
@@ -9,14 +9,14 @@ function incSlide(n){
 function showSlide(n){
   var i = 0;
   var slides = document.getElementsByClassName("slide");
-  if(slideIndex<0){
+  if(slideIndex<1){
     slideIndex = (slides.length - 1);
   }
-  if(slideIndex=slides.length){
-    slideIndex = 0;
+  if(slideIndex>slides.length){
+    slideIndex = 1;
   }
   for(i ; i<slides.length ; i++){
     slides[i].style.display = "none";
   }
-  slides[slideIndex].style.display = "block";
+  slides[slideIndex - 1].style.display = "block";
 }

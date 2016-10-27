@@ -1,6 +1,6 @@
 #This is a ReadMe for my portfolio website
 #Author - Sean A Bone
-#Last Updated - 10/26/2016
+#Last Updated - 10/27/2016
 #
 #--CHANGE LOG--
 # **10/27/2016 **
