@@ -4,10 +4,16 @@
 #
 #--CHANGE LOG--
 #
-# **10/27/2016 **
+# **10/28/16**
+#
+# Still redirecting to correct repo. Change urls anyway on both locations
+#
+# Reame updated. Changes made to slider preview to add preview images in the slider js files.
 #
 # Git not pulling from correct repo because..well i dont know I think it is because I changed
 # my username. Dammit.
+#
+# **10/27/2016 **
 #
 #Pretty sure I remvoed the github remote origin and set so only pushes as portf to the remote
 #
