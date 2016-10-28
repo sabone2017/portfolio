@@ -6,6 +6,9 @@
 #
 # **10/27/2016 **
 #
+# Git not pulling from correct repo because..well i dont know I think it is because I changed
+# my username. Dammit.
+#
 #Pretty sure I remvoed the github remote origin and set so only pushes as portf to the remote
 #
 #
