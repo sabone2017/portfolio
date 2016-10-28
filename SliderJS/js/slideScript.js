@@ -1,5 +1,6 @@
 var slideIndex = 1;
 var slides = document.getElementsByClassName("slide");
+var prevIMG = document.getElementsByClassName("preview");
 showSlide(slideIndex);
 setPreview();
 
@@ -23,5 +24,11 @@ function showSlide(n){
 }
 
 function setPreview(){
-  alert(slides[slideIndex].src);
+  //used to test global var: alert(slides[slideIndex].src);
+  i = 0;
+  for(i ; i<slides.length ; i++){
+    var newPrev = document.createElement('img');
+    newPrev.src = slides[i].src;
+    prevIMG[i].appendChild(newPrev);
+  }
 }
