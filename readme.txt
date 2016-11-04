@@ -3,6 +3,11 @@
 #Last Updated - 10/27/2016
 #
 #--CHANGE LOG--
+# **11/4/16**
+# Still cannot get the slider to select the correct slide to show on click of the corresponding preview image in the sidebar
+# Console.log in the js does nothing as of right now. Not sure if the while loop is being run
+# Pushed to gitHub to work on using the linux box
+#
 # **11/3/16**
 # Working on preview sidebar of the js slider
 # Got the active preview to close on click and show the previously active one properly

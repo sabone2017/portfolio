@@ -32,19 +32,26 @@ function setPreview(){
     newPrev.src = slides[i].src;
     prevIMG[i].addEventListener('click' , activePreview);
     prevIMG[i].appendChild(newPrev);
+    prevIndex[i] = prevIMG[i];
 
   }
-  function previewIndexed(prevIMG , prevIndex){
+/*  function previewIndexed(prevIMG , prevIndex){
     for(i=0 ; i < prevIMG.length ; i++){
       prevIndex[i] = prevIMG[i];
     }
-  }
+  }*/
 }
 
 function activePreview(){
   var activePrev = document.getElementsByClassName('preview-active')[0];
+  var i = 0;
   //change the class to preview
   // for older browsers to remove class names?? no idea : activePrev.className = activePrev.className.replace(/(?:^|\s)preview-acitve/ , 'preview');
   activePrev.classList.remove('preview-active');
   this.className = "preview preview-active";
+  while(!(prevIMG[i] == prevIndex[i])){
+    i++;
+    console.log(i);
+  }
+  slideIndex = i;
 }
