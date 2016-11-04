@@ -3,6 +3,10 @@
 #Last Updated - 10/27/2016
 #
 #--CHANGE LOG--
+# **11/3/16**
+# Working on preview sidebar of the js slider
+# Got the active preview to close on click and show the previously active one properly
+#
 #
 # **10/28/16**
 #
