@@ -52,15 +52,20 @@
     }
     .preview{
       height: 80px;
-      background-color: blue;
       right: 0;
       overflow: hidden;
-      border-bottom: solid black 1px;
     }
     .preview-active{
       width: 50px;
       position: relative;
       left: 90%;
+    }
+    .preview >img{
+      user-select: none;
+      -moz-user-select: none;
+      -webkit-user-drag: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
     }
   </style>
 

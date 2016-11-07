@@ -3,6 +3,12 @@
 #Last Updated - 10/27/2016
 #
 #--CHANGE LOG--
+#
+# **11/7/16**
+# Working on getting the preview images to be undraggable
+# Either the javascript will work or the css properties
+# Firefox sets it to true automatically even with it set to be false in js...go figure.
+#
 # **11/4/16**
 # Still cannot get the slider to select the correct slide to show on click of the corresponding preview image in the sidebar
 # Console.log in the js does nothing as of right now. Not sure if the while loop is being run

@@ -30,6 +30,7 @@ function setPreview(){
   for(i ; i<slides.length ; i++){
     var newPrev = document.createElement('img');
     newPrev.src = slides[i].src;
+    newPrev.draggable = "false";
     prevIMG[i].appendChild(newPrev);
     prevIndex[i] = prevIMG[i];
     prevIMG[i].addEventListener('click' , activePreview);
