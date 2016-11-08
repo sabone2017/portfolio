@@ -71,7 +71,7 @@ li{
 	float:left;
 }
 
-li a{
+.headNav > li a{
 	display: block;
 	text-align: center;
 	padding: 14px 16px;
@@ -79,12 +79,12 @@ li a{
 	color: #000;
 }
 
-li a:hover{
+.headNav > li a:hover{
 	height: auto;
 	background-color: #111;
 	color: #FFF8D9;
 }
 
-li.active{
+.headNav > li.active{
 	border-bottom: red solid 5px;
 }
