@@ -26,7 +26,7 @@
 		<div class="container">
 		<ul class="headNav">
 			<li class="navLink active"><a href="#">Home</a></li>
-			<li class="navLink"><a href="#">Me</a></li>
+			<li class="navLink"><a href="#midBox">Me</a></li>
 			<li class="navLink"><a href="#">Contact</a></li>
 		</ul>
 		</div>
@@ -39,9 +39,43 @@
 	</div>
 </div>
 <div class="wrapper-body" id="middle">
-	<div id="midBox">
-    </div>
+	<div class="container">
+		<div id="midBox">
+			<div id="innerwrap" class="row-content slideBody">
+				<div id="previewcontent" class="sidebar">
+					<div class="preview-active preview">
+					</div>
+					<div class="preview">
+					</div>
+					<div class="preview">
+					</div>
+					<div class="preview">
+					</div>
+					<div class="preview">
+					</div>
+				</div>
+				<div id="slides" class="slideContainer">
+					<img src="../SliderJS/images/bgmaybe.png" class="slide">
+					<img src="../SliderJS/images/DSq3U.jpg" class="slide">
+					<img src="../SliderJS/images/lookbookdrkrgt.png" class="slide">
+					<img src="../SliderJS/images/Obito.jpg" class="slide">
+					<button class="prev" onclick="incSlide(-1)"><</button>
+					<button class="next" onclick="incSlide(1)">></button>
+				</div>
+			</div>
+  	</div>
+		<div class="padder">
+			<p style="padding:20px;"></p>
+		</div>
+	</div>
+</div>
+<div class="wrapper-body" id="banner">
+	<div class="container">
+		<div class="banner-content" id="banner-content">
+		</div>
+	</div>
 </div>
 <script src="buttoncode.js"></script>
+<script src="../SliderJS/js/slideScript.js"></script>
 </body>
 </html>
