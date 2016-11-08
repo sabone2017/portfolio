@@ -8,8 +8,8 @@
 # Added navLink class to li elements in headNav for future use.
 # For now styling is set to just access the li elements by tag name
 #
-#
-#
+# Added in javascript slider to the main portfolio
+# Need to fix the arrows to change preview styling to reflect active slide
 #
 #
 #
