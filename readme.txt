@@ -5,6 +5,15 @@
 #--CHANGE LOG--
 #
 # **11/7/16**
+# Added navLink class to li elements in headNav for future use.
+# For now styling is set to just access the li elements by tag name
+#
+#
+#
+#
+#
+#
+# **11/7/16**
 # Working on getting the preview images to be undraggable
 # Either the javascript will work or the css properties
 # Firefox sets it to true automatically even with it set to be false in js...go figure.
