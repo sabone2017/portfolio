@@ -6,9 +6,12 @@ body{
 	background-image: url(../assets/images/bodyPattern.png);
 	background-size: cover;
 }
-.wrapper{
+.wrapper , .wrapper-body{
 	padding: 0;
 	margin: 0;
+}
+.wrapper-body{
+	display: none;
 }
 .container{
 	padding: 0 20% 0 20%;
@@ -23,7 +26,9 @@ body{
 	font-family: Arial, Gadget, sans-serif;
 }
 .headBorder{
-	display:none;
+	top: 0;
+	position: fixed;
+	width: 100%;
 	background-color: #FFF;
 	opacity: .6;
 }
@@ -43,11 +48,11 @@ body{
 	text-align: center;
 }
 #midBox{
-	display: none;
 	height: 1000px;
 	width: 1700px;
 	margin: 100px auto;
-	background-color: #FFF8D9;
+	background-color: #FFF;
+	opacity: .4;
 }
 #description{
 	position:relative;

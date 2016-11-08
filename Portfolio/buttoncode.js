@@ -5,14 +5,20 @@
 
 //cover page button function : put everything that readies the full page here
 function showPage(){
-  var enterButton = document.getElementById("enter");
-  var theBody = document.getElementsByTagName("body")[0];
-  var header = document.getElementsByClassName("headBorder")[0];
+  //var enterButton = document.getElementById("enter");
+  //var theBody = document.getElementsByTagName("body")[0];
+  //var header = document.getElementsByClassName("headBorder")[0];
+  var content = document.getElementsByClassName('wrapper-body');
   var sectOne = document.getElementById("intro");
-  var sectTwo = document.getElementById("midBox");
-  header.style.display = "block";
+  //var sectTwo = document.getElementById("midBox");
+  //header.style.display = "block";
+  var i = 0;
+  while(i<content.length){
+    content[i].style.display = "block";
+    i++;
+  }
   sectOne.style.display= "none";
-  sectTwo.style.display = "block";
+  //sectTwo.style.display = "block";
   navSet();
   // don't need moved to css theBody.style.backgroundImage = "url(assets/images/bodyPattern.png)"
   // don't need moved to css  theBody.style.backgroundSize = "cover";
