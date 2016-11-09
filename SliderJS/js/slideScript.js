@@ -8,6 +8,8 @@ setPreview();
 function incSlide(n){
   slideIndex +=n;
   showSlide(slideIndex);
+  document.getElementsByClassName('preview-active')[0].classList.remove('preview-active');
+  document.getElementsByClassName('preview')[slideIndex-1].classList.add('preview-active');
 }
 
 function showSlide(n){
@@ -28,6 +30,7 @@ function setPreview(){
   //used to test global var: alert(slides[slideIndex].src);
   i = 0;
   for(i ; i<slides.length ; i++){
+    //prevIMG[i].style.height = (document.getElementsByClassName('slideContainer')[0].style.height / slides.length) + "px";
     var newPrev = document.createElement('img');
     newPrev.src = slides[i].src;
     newPrev.draggable = "false";

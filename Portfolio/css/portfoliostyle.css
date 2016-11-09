@@ -122,12 +122,13 @@ li{
 }
 #banner{
 	background-image: url('../assets/images/blurbg.png');
-	background-size: cover;;
+	background-size: cover;
 	height: 500px;
 }
 /*slider styles*/
 .slideBody{
 	box-sizing: border-box;
+	-moz-box-sizing: border-box;
 	/*background-color: #5fd5d5;*/
 }
 /*.slideBody::after{
@@ -146,9 +147,10 @@ li{
 }*/
 .row-content{
 	padding: 25px 25px 25px 25px;
-	min-height: 500px;
+	height: 500px;
 }
 .sidebar{
+	overflow: hidden;
 	float: left;
 	position: relative;
 	padding-right: 0;
@@ -158,6 +160,7 @@ li{
 
 .slideContainer{
 	box-sizing: border-box;
+	-moz-box-sizing: border-box;
 	float:left;
 	position: relative;
 	padding: 0;
@@ -168,6 +171,7 @@ li{
 }
 
 .slide{
+	animation: fadein 2s;
 	display: none;
 	max-height: 400px;
 	min-width: 747px;
@@ -188,14 +192,18 @@ li{
 	border-radius: 5px 0 0 5px;
 }
 .preview{
+	/*height: 80px;*/
 	height: 80px;
-	right: 0;
 	overflow: hidden;
+	width: 400px;
+	transform: translate(0% , 0);
+	transition: .8s linear;
+	transform-origin: right;
 }
 .preview-active{
-	width: 50px;
-	position: relative;
-	left: 90%;
+	/*left: 350px;*/
+	overflow: hidden;
+	transform: translate(80%, 0);
 }
 .preview >img{
 	user-select: none;
@@ -203,4 +211,12 @@ li{
 	-webkit-user-drag: none;
 	-webkit-user-select: none;
 	-ms-user-select: none;
+}
+@keyframes fadein {
+	from {
+		opacity:0;
+	}
+	to{
+		opacity:1;
+	}
 }
