@@ -4,6 +4,12 @@
 #
 #--CHANGE LOG--
 #
+# **11/8/16**
+# Completed css animations on MainV2 portfolio page
+# Look to set them up in the javascript side to get it done automatically
+# Not much more has been done. It is working nicely.
+# Try to fix the height setting functionality so that height is set based on number of images
+#
 # **11/7/16**
 # Added navLink class to li elements in headNav for future use.
 # For now styling is set to just access the li elements by tag name
