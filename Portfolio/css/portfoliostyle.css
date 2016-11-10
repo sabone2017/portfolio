@@ -3,7 +3,7 @@ html , body{
 	padding:0;
 }
 body{
-	background-image: url(../assets/images/bodyPattern.png);
+	background-image: url(../assets/images/bodyPattern2.png);
 	background-size: cover;
 }
 .wrapper , .wrapper-body{
@@ -34,9 +34,9 @@ body{
 }
 .headBorder{
 	top: 0;
-	position: fixed;
+	/*position: fixed;*/
 	width: 100%;
-	background-color: #FFF;
+	/*background-color: #FFF;*/
 	opacity: .6;
 	z-index: 1;
 }
@@ -56,22 +56,11 @@ body{
 	text-align: center;
 }
 #midBox{
-	height: 800px;
-	margin: 100px 0 100px 0;
+	height: auto;
+	margin: 100px 0 0 0;
 /*	background-color: #FFF;
 	opacity: .4;*/
 }
-/*#midBox::after{
-	content: '';
-	background-color: #FFF;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: -1;
-	opacity: .4;
-}*/
 #description{
 	position:relative;
 	width: 403px;
@@ -149,6 +138,19 @@ li{
 	padding: 25px 25px 25px 25px;
 	height: 500px;
 }
+.row-content-title{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 680px;
+	padding: 10px 0px 10px 0px;
+	border-bottom: 2px solid black;
+}
+.row-content-title img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
 .sidebar{
 	overflow: hidden;
 	float: left;
@@ -197,7 +199,7 @@ li{
 	overflow: hidden;
 	width: 400px;
 	transform: translate(0% , 0);
-	transition: .8s linear;
+	transition: .4s linear;
 	transform-origin: right;
 }
 .preview-active{
