@@ -110,30 +110,22 @@ li{
 	border-bottom: red solid 5px;
 }
 #banner{
-	background-image: url('../assets/images/blurbg.png');
+	background-image: url('../assets/images/jjs.png');
 	background-size: cover;
-	height: 500px;
+	height: 1000px;
+	overflow: hidden;
 }
+#banner img{
+	width:1900px;
+	top: 500px;
+}
+
 /*slider styles*/
 .slideBody{
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	/*background-color: #5fd5d5;*/
 }
-/*.slideBody::after{
-	content: '';
-	background-color: #FFF;
-	position: absolute;
-	top: inherit;
-	left: 200px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: -50px;
-	width: 1400px;
-	height: 100%;
-	z-index: -1;
-	opacity: .7;
-}*/
 .row-content{
 	padding: 25px 25px 25px 25px;
 	height: 500px;
@@ -175,8 +167,12 @@ li{
 .slide{
 	animation: fadein 2s;
 	display: none;
-	max-height: 400px;
+	max-height: 450px;
 	min-width: 747px;
+}
+.slide img{
+	max-width: 747px;
+	height: auto;
 }
 
 .prev , .next{
@@ -221,4 +217,25 @@ li{
 	to{
 		opacity:1;
 	}
+}
+#caption-box{
+	height: auto;
+	width: 50%;
+	background-color: #000;
+	margin: 0 auto;
+	border-radius: 10px;
+	opacity: .3;
+}
+#slider-caption{
+	text-align: center;
+	vertical-align: middle;
+	font-size: 16px;
+	font-weight: bolder;
+	color: white;
+}
+#banner-logo img{
+	width: 680px;
+	display: block;
+	margin: 0 auto;
+	padding: 100px 10px 100px 10px;
 }
