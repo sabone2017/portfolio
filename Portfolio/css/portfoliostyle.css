@@ -271,9 +271,10 @@ body{
 	border-radius: 25px;
 }
 #blogs{
-	background-color: #3c505c;
+	margin: 100px 0 0 0;
 }
 .blogRow{
+	background-color: #3c505c;
 	height: 350px;
 }
 .blogCol{
@@ -302,5 +303,10 @@ body{
 	margin-bottom: 10px;
 	width: 300px;
 	height: 300px;
-	width:
+	overflow: hidden;
+}
+.blogPrev img{
+	height: 100%;
+	left: -300px;
+	top: -50%;
 }
