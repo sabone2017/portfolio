@@ -13,16 +13,25 @@ body{
 .wrapper-body{
 	display: none;
 }
-/*.container{
-	padding: 0 20% 0 20%;
-}*/
+/*responsive shit*/
 .container{
 	box-sizing: border-box;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 0 15px 0 15px;
 	width: 1200px;
+	position: relative;
 }
+.row{
+	box-sizing: border-box;
+	margin: 0 -15px 0 -15px;
+	padding: 0;
+}
+.col{
+	box-sizing: border-box;
+	padding: 0 15px 0 15px;
+}
+/*----------*/
 #intro{
 	height: 100vh;
 	background-image: url(../assets/images/fullBG.png);
@@ -36,8 +45,9 @@ body{
 	top: 0;
 	/*position: fixed;*/
 	width: 100%;
-	/*background-color: #FFF;*/
-	opacity: .6;
+	height: 30px;
+	background-color: rgba(60,80,92,.7);
+	opacity: 1;
 	z-index: 1;
 }
 #logo{
@@ -79,38 +89,39 @@ body{
 }
 
 .headNav{
+	height: 30px;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
 }
-
-li{
+.headNav li{
+	height: inherit;
 	width: 85px;
 	float:left;
 }
 
 .headNav > li a{
+	height: 30px;
 	display: block;
 	text-align: center;
 	font-weight: bold;
 	font-family: sans-serif;
-	padding: 14px 16px;
+	padding: 4px 16px;
 	text-decoration: none;
-	color: #000;
+	color: #FFF;
 }
 
 .headNav > li a:hover{
-	height: auto;
-	background-color: #111;
+	background-color: rgba(0,0,0,.6);
 	color: #FFF8D9;
 }
 
 .headNav > li.active{
-	border-bottom: red solid 5px;
+	/*border-bottom: red solid 5px;*/
 }
 #banner{
-	background-image: url('../assets/images/jjs.png');
+	background-image: url('../assets/images/jjs2.png');
 	background-size: cover;
 	height: 1000px;
 	overflow: hidden;
@@ -128,7 +139,7 @@ li{
 }
 .row-content{
 	padding: 25px 25px 25px 25px;
-	height: 500px;
+	height: 420px;
 }
 .row-content-title{
 	display: block;
@@ -177,13 +188,18 @@ li{
 
 .prev , .next{
 	position: absolute;
-	background-color: #000;
+	background-color: rgba(0,0,0,.4);
 	font-size: 25px;
 	color: white;
 	font-weight: bold;
 	top: 50%;
 	width: auto;
+	border: none;
 	border-radius: 0 5px 5px 0;
+}
+.prev:hover , .next:hover{
+	animation: buttonFade 1500ms;
+	background-color: rgba(0, 0, 0, 0.8);
 }
 .next{
 	right: 0;
@@ -218,6 +234,14 @@ li{
 		opacity:1;
 	}
 }
+@keyframes buttonFade {
+	from{
+		background-color: rgba(0, 0, 0, 0.4);
+	}
+	to{
+		background-color: rgba(0, 0, 0,.8);
+	}
+}
 #caption-box{
 	height: auto;
 	width: 50%;
@@ -238,4 +262,32 @@ li{
 	display: block;
 	margin: 0 auto;
 	padding: 100px 10px 100px 10px;
+}
+/*blog post stuff*/
+.blogPost{
+	width: 600px;
+	height: 200px;
+	border: 1px solid black;
+	border-radius: 25px;
+}
+#blogs{
+	background-color: #3c505c;
+}
+.blogRow{
+	height: 350px;
+}
+.blogCol{
+	position: relative;
+	display: inline-block;
+	box-sizing: border-box;
+	width: 33%;
+	height: 350px;
+	padding: 15px 0 15px 0;
+	/*border-right:2px solid white;*/
+	overflow: hidden;
+}
+.blogCol-border{
+	border-right: 2px solid white;
+	height: 250px;
+	margin: 35px 0 35px 0;
 }
