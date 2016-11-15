@@ -76,10 +76,13 @@ html , body{
 	width: 1900px;
 	top: 500px;
 }*/
+#banner-logo{
+  padding: 100px 10px 100px 10px;
+}
 #banner-logo img{
 	height: 280px;
 	display: block;
-	padding: 100px 10px 100px 10px;
+	/*padding: 100px 10px 100px 10px;*/
 }
 #bannerQuote{
   text-align: center;
@@ -105,4 +108,24 @@ html , body{
 }
 #bannerQuote >p span{
   display: block;
+}
+  /*Stuff for the header nav bar*/
+.headNav{
+  position: absolute;
+  width: 100%;
+  display: inline-block;
+}
+.navList{
+  list-style: none;
+  display: inline-block;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
+.navList li{
+  display: inline-block;
+  text-align: center;
+  width: 200px;
+  color: white;
+  font-size: 48px;
 }
