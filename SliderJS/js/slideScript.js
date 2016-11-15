@@ -8,6 +8,8 @@ setPreview();
 function incSlide(n){
   slideIndex +=n;
   showSlide(slideIndex);
+  document.getElementsByClassName('preview-active')[0].classList.remove('preview-active');
+  document.getElementsByClassName('preview')[slideIndex-1].classList.add('preview-active');
 }
 
 function showSlide(n){

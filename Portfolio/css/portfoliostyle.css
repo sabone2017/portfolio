@@ -135,11 +135,13 @@ body{
 .slideBody{
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
+	height: 400px;
+	overflow: hidden;
 	/*background-color: #5fd5d5;*/
 }
 .row-content{
 	padding: 25px 25px 25px 25px;
-	height: 420px;
+	height: auto;
 }
 .row-content-title{
 	display: block;
@@ -159,7 +161,7 @@ body{
 	float: left;
 	position: relative;
 	padding-right: 0;
-	width: 33%;
+	width: 15%;
 	min-height: 400px;
 }
 
@@ -207,9 +209,8 @@ body{
 }
 .preview{
 	/*height: 80px;*/
-	height: 80px;
+	height: 20px;
 	overflow: hidden;
-	width: 400px;
 	transform: translate(0% , 0);
 	transition: .4s linear;
 	transform-origin: right;
