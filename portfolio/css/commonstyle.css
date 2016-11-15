@@ -1,0 +1,96 @@
+html , body{
+	margin:0;
+	padding:0;
+}
+.wrapper , .wrapper-body{
+	padding: 0;
+	margin: 0;
+}
+.wrapper-body{
+	display: none;
+}
+.container{
+	box-sizing: border-box;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 15px 0 15px;
+	width: 1200px;
+	position: relative;
+  height: inherit;
+}
+.centered{
+  margin: 0 auto;
+}
+/*stuff for cover page*/
+#intro{
+	height: 100vh;
+	background-image: url(../assets/images/fullBG.png);
+	background-size: cover;
+	color: white;
+	font-weight: bold;
+	font-size: 26px;
+	font-family: Arial, Gadget, sans-serif;
+}
+#centerStuff{
+	position: relative;
+	top: 0px;
+	width: 500px;
+	margin:0 auto;
+	text-align: center;
+}
+#logo{
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	margin-right:118px;
+	top: 220px;
+	width: auto;
+}
+#description{
+	position:relative;
+	width: 403px;
+	top: 250px;
+	margin: 0 auto;
+}
+#enter{
+	position: relative;
+	top: 300px;
+	color: white;
+	font-weight: bold;
+	font-size: 25px;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	border: solid white 4px;
+}
+
+/*stuff for banner*/
+#banner{
+	background-image: url('../assets/images/jjs3.png');
+	background-size: cover;
+	height: 1000px;
+	overflow: hidden;
+  font-family: 'Allan' , cursive;
+  font-weight: 700;
+}
+/*#banner img{
+	width: 1900px;
+	top: 500px;
+}*/
+#banner-logo img{
+	height: 280px;
+	display: block;
+	padding: 100px 10px 100px 10px;
+}
+#bannerQuote{
+  text-align: center;
+  color: white;
+  font-size: 36px;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+#bannerQuote p{
+  width: 275px;
+}
+#bannerQuote >p span{
+  display: block;
+}
