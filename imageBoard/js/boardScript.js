@@ -33,5 +33,12 @@ function hoverView(){
 
 function hoverIn(){
   var description = document.getElementById('description-area');
-  description.classList.add('descriptionActive');
+  var descImg = description.getElementsByTagName('img')[0];
+  descImg.classList.add('activeImg')
+}
+
+function hoverOut(){
+  var description = document.getElementById('description-area');
+  var descImg = description.getElementsByTagName('img')[0];
+  descImg.classList.remove('activeImg')
 }

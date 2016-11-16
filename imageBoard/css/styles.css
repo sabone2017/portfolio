@@ -51,25 +51,20 @@
   height: 560px;
   width: 1400px;
   position: absolute;
-  overflow: hidden;
 	text-align: right;
-	left: -100%;
+	overflow: hidden;
 }
 #description-area img{
+	position:relative;
   height: 100%;
+	left: -100%;
 }
-.descriptionActive{
-	height: 560px;
-	width: 1400px;
-	position: absolute;
-	overflow: hidden;
-	text-align: right;
-	transform: translate(120%,0);
+.activeImg{
+	transform: translate(100%,0);
 	transition: .4s linear;
 }
 #container{
 	height: 560px;
 	width: 1400px;
 	margin: 0 auto;
-	overflow:hidden;
 }
