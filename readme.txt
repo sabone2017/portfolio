@@ -1,8 +1,15 @@
 #This is a ReadMe for my portfolio website
 #Author - Sean A Bone
 #Last Updated - 10/27/2016
-#
+#Branch - UXREWORK
 #--CHANGE LOG--
+#
+#**11/16/16**
+# Changed to MainV3 after comments
+# No more image slider now will use the imageBoard idea
+# Changed banner and mid div
+# Set up new navBar that is now inside the banner around the Logo
+#
 #
 # **11/8/16**
 # Completed css animations on MainV2 portfolio page
@@ -17,8 +24,6 @@
 # Added in javascript slider to the main portfolio
 # Need to fix the arrows to change preview styling to reflect active slide
 #
-#
-#
 # **11/7/16**
 # Working on getting the preview images to be undraggable
 # Either the javascript will work or the css properties
@@ -32,7 +37,6 @@
 # **11/3/16**
 # Working on preview sidebar of the js slider
 # Got the active preview to close on click and show the previously active one properly
-#
 #
 # **10/28/16**
 #
