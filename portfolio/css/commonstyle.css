@@ -159,16 +159,12 @@ html , body{
 .imageRow{
 	height: 33%;
 	display: flex;
-	/*margin: 0 -15px 0 -15px;*/
 }
 #imageBoard .container{
 	width: 75%
 }
 .imageBox{
-	/*padding: 0;
-	margin: 0;*/
-	/*display: inline-block;*/
-	/*height: 33%;*/
+	background-color: rgb(42,52,58);
 	width: 25%;
 }
 .imageBox-red{

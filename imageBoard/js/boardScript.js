@@ -32,10 +32,6 @@ function hoverView(){
 }
 
 function hoverIn(){
-  var shade = this.querySelector('.boxHover');
-  shade.style.display = "block";
-}
-function hoverOut(){
-  var shade = this.querySelector('.boxHover');
-  shade.style.display = "none";
+  var description = document.getElementById('description-area');
+  description.classList.add('descriptionActive');
 }
