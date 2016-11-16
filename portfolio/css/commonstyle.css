@@ -122,6 +122,7 @@ html , body{
   padding: 0;
   text-align: center;
   width: 100%;
+	height: 61px;
   margin: 105px 0 0 0;
 }
 .navList li{
@@ -142,6 +143,34 @@ html , body{
   text-decoration: none;
   padding: 0 75px;
 }
-.navList >li a: hover{
-  color: red;
+.navList >li a:hover{
+  color: rgba(250,220,64,1);
+}
+
+/*stuff for the Image Board*/
+#imageBoard{
+	background-color: rgb(42,52,58);
+	height: 800px;
+}
+#flipboard{
+	height: 560px;
+	width: 995px;
+}
+.imageRow{
+	height: 33%;
+	display: flex;
+	/*margin: 0 -15px 0 -15px;*/
+}
+#imageBoard .container{
+	width: 75%
+}
+.imageBox{
+	/*padding: 0;
+	margin: 0;*/
+	/*display: inline-block;*/
+	/*height: 33%;*/
+	width: 25%;
+}
+.imageBox-red{
+		background-color: rgba(171,50,60,1);
 }
