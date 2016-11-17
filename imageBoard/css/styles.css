@@ -54,12 +54,15 @@
 	text-align: right;
 	overflow: hidden;
 }
-#description-area img{
+.descImg{
 	position:relative;
   height: 100%;
 	left: -100%;
+	transform: translate(0 , 0);
+	transition: .4s linear;
 }
 .activeImg{
+	position: relative;
 	transform: translate(100%,0);
 	transition: .4s linear;
 }
