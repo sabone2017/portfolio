@@ -10,6 +10,7 @@ var holderb = new imageMaker('full' , 'images/holder.png');
 var holderc = new imageMaker('full' , 'images/holder.png');
 var holderd = new imageMaker('full' , 'images/holder.png');
 hoverView();
+//HOVER STUFF MAYBE WE CAN KEEP IT ALL IN THE HOVERVIEW FUNCTION
 function hoverView(){
   var i = 0;
   for(i ; i<boxes.length ; i++){
@@ -19,21 +20,30 @@ function hoverView(){
 }
 
 function hoverIn(){
-  //var description = document.getElementById('description-area');
+  var a = this;
   var descImg = document.getElementsByClassName('descImg')[0];
   //console.log(this)
-  setPreview(this , 0);
+  setFullImg(a , 0);
   descImg.classList.add('activeImg');
   console.log(descImg.src);
 }
 
 function hoverOut(){
-  //var description = document.getElementById('description-area');
   var descImg = document.getElementsByClassName('descImg')[0];
   descImg.classList.remove('activeImg');
   //console.log(descImg);
 }
-
+function setFullImg(a , c){
+  var descImg = document.getElementsByClassName('descImg')[0];
+  while(c < boxes.length){
+    if(a == document.getElementsByClassName('imageBox')[c]){
+      descImg.src = fullImageList[c].imageURL;
+    }
+    c++;
+  }
+  console.log(descImg.src);
+}
+//////////////////////////////////////////////////
 //array for images possibly make it in html and just select by DOM selectors
 //option 2: create an image object and create an array of image objects
 // each object will have two properties of type (preview or full) and url(actual link to image)
@@ -65,13 +75,3 @@ function imageMaker(type , link){
 // change image
 // reapply active class
 // make sure the animation is complete before readding class...
-function setPreview(a , c){
-  var descImg = document.getElementsByClassName('descImg')[0];
-  while(c < boxes.length){
-    if(a == document.getElementsByClassName('imageBox')[c]){
-      descImg.src = fullImageList[c].imageURL;
-    }
-    c++;
-  }
-  console.log(descImg.src);
-}
