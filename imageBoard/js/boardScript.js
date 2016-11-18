@@ -21,11 +21,15 @@ function hoverView(){
 
 function hoverIn(){
   var a = this;
+  var descImg = document.getElementsByClassName('descImg')[0];
+  var t = 0;
 //var fullImg = setFullImg(a , 0);
-  setTimeout(animateImg , 800);
+  if(descImg.src != ""){
+    t = 800;
+  }
+  setTimeout(animateImg , t);
   function animateImg(){
     setFullImg(a , 0);
-    var descImg = document.getElementsByClassName('descImg')[0];
     //console.log(this)
 
     descImg.classList.add('activeImg');
