@@ -3,6 +3,12 @@ var boxes = document.getElementsByClassName('imageBox');
   Make it so it is only affected by a current box
   Might need to make an array for the images to be selected from*/
 var fullImageList = [];
+var textTime = new imageMaker("full" , "images/textTimeFull2.png");
+var carbon = new imageMaker("full" , "images/CarbonFull.png");
+var holdera = new imageMaker('full' , 'images/holder.png');
+var holderb = new imageMaker('full' , 'images/holder.png');
+var holderc = new imageMaker('full' , 'images/holder.png');
+var holderd = new imageMaker('full' , 'images/holder.png');
 hoverView();
 function hoverView(){
   var i = 0;
@@ -10,28 +16,22 @@ function hoverView(){
     boxes[i].addEventListener("mouseenter" , hoverIn);
     boxes[i].addEventListener("mouseleave" , hoverOut);
   }
-/*  boxes[0].onmouseenter = function shadeBox(){
-    for(i=0 ; i<shades.length ; i++){
-      shades[i].style.display = "block";
-    }
-  };
-  boxes[0].onmouseleave = function unShadeBox(){
-    for(i=0 ; i<shades.length ; i++){
-      shades[i].style.display = "none";
-    }
-  };*/
 }
 
 function hoverIn(){
   //var description = document.getElementById('description-area');
   var descImg = document.getElementsByClassName('descImg')[0];
-  descImg.classList.add('activeImg')
+  //console.log(this)
+  setPreview(this , 0);
+  descImg.classList.add('activeImg');
+  console.log(descImg.src);
 }
 
 function hoverOut(){
   //var description = document.getElementById('description-area');
   var descImg = document.getElementsByClassName('descImg')[0];
-  descImg.classList.remove('activeImg')
+  descImg.classList.remove('activeImg');
+  //console.log(descImg);
 }
 
 //array for images possibly make it in html and just select by DOM selectors
@@ -54,16 +54,24 @@ function imageMaker(type , link){
   //push to correct array based on type of image
   if(this.imageType == "full"){
     fullImageList.push(this);
-    console.log(fullImageList);
+    //console.log(fullImageList); debugging purposes
   }
 }
-function setPreview(){
+// need to find a way to associate the box with the specific image
+  // - while c < selector.length if(this(current imageBox) = document.getElByCl('imageBox')[i](run through selectors for imageBox object)
+  // i = c;
+  // descImg.src = fullImageList[i]
+// remove active class
+// change image
+// reapply active class
+// make sure the animation is complete before readding class...
+function setPreview(a , c){
   var descImg = document.getElementsByClassName('descImg')[0];
-  descImg.src = fullImageList[0];
+  while(c < boxes.length){
+    if(a == document.getElementsByClassName('imageBox')[c]){
+      descImg.src = fullImageList[c].imageURL;
+    }
+    c++;
+  }
+  console.log(descImg.src);
 }
-var textTime = new imageMaker("full" , "../images/textTimeFull2.png");
-var carbon = new imageMaker("full" , "../images/CarbonFull.png");
-var holdera = new imageMaker('full' , '../images/holder.png');
-var holderb = new imageMaker('full' , '../images/holder.png');
-var holderc = new imageMaker('full' , '../images/holder.png');
-var holderd = new imageMaker('full' , '../images/holder.png');
