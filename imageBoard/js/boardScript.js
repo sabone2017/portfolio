@@ -21,11 +21,16 @@ function hoverView(){
 
 function hoverIn(){
   var a = this;
-  var descImg = document.getElementsByClassName('descImg')[0];
-  //console.log(this)
-  setFullImg(a , 0);
-  descImg.classList.add('activeImg');
-  console.log(descImg.src);
+//var fullImg = setFullImg(a , 0);
+  setTimeout(animateImg , 800);
+  function animateImg(){
+    setFullImg(a , 0);
+    var descImg = document.getElementsByClassName('descImg')[0];
+    //console.log(this)
+
+    descImg.classList.add('activeImg');
+    console.log(descImg.src);
+  }
 }
 
 function hoverOut(){
