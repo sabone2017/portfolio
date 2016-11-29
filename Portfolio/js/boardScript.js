@@ -5,43 +5,39 @@ var boxes = document.getElementsByClassName('imageBox');
 var fullImageList = [];
 var textTime = new imageMaker("full" , "assets/images/boardPics/textTimeFull2.png");
 var carbon = new imageMaker("full" , "assets/images/boardPics/CarbonFull.png");
-var holdera = new imageMaker('full' , 'assets/images/boardPics/holder.png');
-var holderb = new imageMaker('full' , 'assets/images/boardPics/holder.png');
-var holderc = new imageMaker('full' , 'assets/images/boardPics/holder.png');
-var holderd = new imageMaker('full' , 'assets/images/boardPics/holder.png');
+var holdera = new imageMaker('full' , 'assets/images/boardPics/arrowsFull.png');
+var holderb = new imageMaker('full' , 'assets/images/boardPics/mangaFull.png');
+var holderc = new imageMaker('full' , 'assets/images/boardPics/mflnFull.png');
+var holderd = new imageMaker('full' , 'assets/images/boardPics/pcBuildFull.png');
 hoverView();
-//HOVER STUFF MAYBE WE CAN KEEP IT ALL IN THE HOVERVIEW FUNCTION
+
 function hoverView(){
   var i = 0;
+  var descImg = document.getElementsByClassName('descImg')[0];
+
   for(i ; i<boxes.length ; i++){
     boxes[i].addEventListener("mouseenter" , hoverIn);
     boxes[i].addEventListener("mouseleave" , hoverOut);
   }
-}
 
-function hoverIn(){
-  var a = this;
-  var descImg = document.getElementsByClassName('descImg')[0];
-  var t = 0;
-//var fullImg = setFullImg(a , 0);
-  if(descImg.src != ""){
-    t = 800;
+  function hoverIn(){
+    var a = this;
+    var t = 0;
+    if(descImg.src != ""){
+      t = 800;
+    }
+    setTimeout(animateImg , t);
+    function animateImg(){
+      setFullImg(a , 0);
+      descImg.classList.add('activeImg');
+    }
   }
-  setTimeout(animateImg , t);
-  function animateImg(){
-    setFullImg(a , 0);
-    //console.log(this)
 
-    descImg.classList.add('activeImg');
-    console.log(descImg.src);
+  function hoverOut(){
+    descImg.classList.remove('activeImg');
   }
 }
 
-function hoverOut(){
-  var descImg = document.getElementsByClassName('descImg')[0];
-  descImg.classList.remove('activeImg');
-  //console.log(descImg);
-}
 function setFullImg(a , c){
   var descImg = document.getElementsByClassName('descImg')[0];
   while(c < boxes.length){
@@ -50,7 +46,6 @@ function setFullImg(a , c){
     }
     c++;
   }
-  console.log(descImg.src);
 }
 //////////////////////////////////////////////////
 //array for images possibly make it in html and just select by DOM selectors
@@ -76,11 +71,3 @@ function imageMaker(type , link){
     //console.log(fullImageList); debugging purposes
   }
 }
-// need to find a way to associate the box with the specific image
-  // - while c < selector.length if(this(current imageBox) = document.getElByCl('imageBox')[i](run through selectors for imageBox object)
-  // i = c;
-  // descImg.src = fullImageList[i]
-// remove active class
-// change image
-// reapply active class
-// make sure the animation is complete before readding class...
