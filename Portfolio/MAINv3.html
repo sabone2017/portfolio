@@ -1,4 +1,5 @@
 <!DOCTYPE HTML>
+<html ng-app="blogApp">
 <head>
   <meta name="author" content="Sean B">
   <meta charset="utf-8">
@@ -24,7 +25,7 @@
   <!--This is the Banner shit-->
   <div class="wrapper-body" id="banner">
     <div class="container">
-      <div id="banner-logo">
+      <div id="banner-logo" class="row">
           <!--<nav class="headNav">
             <ul id="bannerNav" class="navList">
               <li><a href="#">HOME</a></li>
@@ -49,24 +50,21 @@
           WEB
         </p>
       </div>-->
-      <div id="bannerArrow">
+      <div id="bannerArrow" class="row">
         <img src="assets/images/bannerArrow.png" class="centered">
       </div>
     </div>
   </div>
   <div class="wrapper-body" id="aboutMe">
     <div class="container">
-      <div class="about-row">
-        <div id="about-details">
-          <div id="aboutImg">
-            <img class="circleImage" src="assets/images/aboutMe1.png" id="meImage">
-          </div>
-          <div id="aboutP">
-            <p></p>
-          </div>
-        </div>
+      <div id="about-image" class="center-wrap row">
+        <img class="circleImage centered" src="assets/images/aboutMe1.png" id="meImage">
+      </div>
+      <div id="aboutP">
+        <p></p>
       </div>
     </div>
+  </div>
   </div>
   <div class="wrapper-body" id="imageBoard">
     <div class="container"><!--not sure if we are gonna keep this container here-->
@@ -133,8 +131,30 @@
       </div>
     </div>
   </div>
+  <div class="wrapper-body" id="blogs">
+    <div class="container">
+      <div class="row center-wrap">
+        <div id="recent-posts" ng-controller="BlogController">
+          <div class="blog-post centered" ng-repeat="post in recentPosts">
+            <div class="postHead">
+              <a href="{{post.headerLink}}">
+                <img ng-src="{{post.headerImg}}">
+              </a>
+            </div>
+            <div class="footer">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/angular/angular.min.js"></script>
 <script src="js/buttoncode.js"></script>
 <script src="js/boardScript.js"></script>
+<script src="js/blogApp.js"></script>
+
+
 <!--This is some shit to test this add-->
 </body>
 </html>

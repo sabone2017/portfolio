@@ -25,6 +25,7 @@ body{
 }
 .centered{
   margin: 0 auto;
+	display: block;
 }
 /*stuff for cover page*/
 #intro{
@@ -66,6 +67,11 @@ body{
 	background-color: transparent;
 	background-repeat: no-repeat;
 	border: solid white 4px;
+}
+.center-wrap{
+	position: absolute;
+	width: 100%;
+	height: auto;
 }
 
 /*stuff for banner*/
@@ -219,14 +225,55 @@ body{
 }
 
 /*About me shit*/
-
+#aboutMe{
+	height: 500px;
+}
 .circleImage{
 	border-radius: 100%;
 }
-#about-details{
-	width: 70%;
-	margin: 50px auto;
+#about-image{
+	margin-top: 100px;
 }
 #meImage{
 	width: 150px;
+}
+
+/*blog post shit*/
+#blogs{
+	height: 700px;
+}
+.row{
+	margin: 0 -15px;
+}
+.blog-post{
+	width: 300px;
+	height: 300px;
+	position: relative;
+}
+.postHead{
+	height: 100%;
+	width:100%;
+	overflow: hidden;
+}
+.postHead a{
+	text-decoration: none;
+	display: block;
+	padding: 0px;
+	height: 100%;
+	width: 300px;
+}
+.postHead > a img{
+	display: block;
+	height: 100%;
+}
+.blog-post .footer{
+	height: 10%;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	background-color: rgba(255,255,255,.2);
+}
+#recent-posts{
+	display: flex;
+	justify-content: space-around;
 }
