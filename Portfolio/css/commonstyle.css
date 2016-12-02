@@ -2,6 +2,11 @@ html , body{
 	margin:0;
 	padding:0;
 }
+
+body{
+	background-color: rgb(42,52,58);
+}
+
 .wrapper , .wrapper-body{
 	padding: 0;
 	margin: 0;
@@ -15,8 +20,8 @@ html , body{
 	margin-right: auto;
 	padding: 0 15px 0 15px;
 	width: 63%;
+	height: 100%;
 	position: relative;
-  height: inherit;
 }
 .centered{
   margin: 0 auto;
@@ -65,27 +70,23 @@ html , body{
 
 /*stuff for banner*/
 #banner{
-	background-image: url('../assets/images/jjs3.png');
+	background-image: url('../assets/images/jjs2.png');
 	background-size: cover;
-	height: 1000px;
-	overflow: hidden;
+	height: 970px;
+	/*overflow: hidden;*/
   font-family: 'Allan' , cursive;
   font-weight: 700;
 }
-/*#banner img{
-	width: 1900px;
-	top: 500px;
-}*/
 #banner-logo{
-  margin: 0 auto;
-  padding: 100px 10px 100px 10px;
+  position: absolute;
+  width: 100%;
+	top: 100px;
 }
 #banner-logo img{
-	height: 280px;
+	width: 690px;
 	display: block;
-	/*padding: 100px 10px 100px 10px;*/
 }
-#bannerQuote{
+/*#bannerQuote{
   text-align: center;
   color: white;
   font-size: 36px;
@@ -109,7 +110,7 @@ html , body{
 }
 #bannerQuote >p span{
   display: block;
-}
+}*/
   /*Stuff for the header nav bar*/
 .headNav{
   position: absolute;
@@ -118,7 +119,6 @@ html , body{
 }
 .navList{
   list-style: none;
-  /*display: inline-block;*/
   padding: 0;
   text-align: center;
   width: 100%;
@@ -126,9 +126,6 @@ html , body{
   margin: 105px 0 0 0;
 }
 .navList li{
-  /*display: inline-block;
-  text-align: center;
-  width: 280px;*/
   float: left;
   font-size: 48px;
 }
@@ -146,7 +143,15 @@ html , body{
 .navList >li a:hover{
   color: rgba(250,220,64,1);
 }
-
+#bannerArrow{
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+}
+#bannerArrow img{
+	display: block;
+	margin-bottom: -30px;
+}
 /*stuff for the Image Board*/
 #imageBoard{
 	background-color: rgb(42,52,58);
@@ -167,6 +172,7 @@ html , body{
 #flipboard{
 	height: 560px;
 	width: 995px;
+	padding: 75px;
 }
 .imageRow{
 	height: 33%;
@@ -210,4 +216,17 @@ html , body{
   position: absolute;
 	text-align: right;
 	overflow: hidden;
+}
+
+/*About me shit*/
+
+.circleImage{
+	border-radius: 100%;
+}
+#about-details{
+	width: 70%;
+	margin: 50px auto;
+}
+#meImage{
+	width: 150px;
 }
